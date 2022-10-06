@@ -1,1 +1,163 @@
+body {
+    background-color: rgb(18, 2, 110);
+  }
+  .header {
+padding: 80px;
+text-align: center;
+background: #5473ca;
+color: white;
+}
 
+  h1 {
+    color: white;
+    text-align: center;
+  }
+  p {
+    color: white;
+    text-align: center;
+    font-family: verdana;
+    font-size: 80%;
+}.navbar{
+    border:1px solid rgb(255, 255, 255); 
+    overflow: hidden;
+background-color: #333;
+grid-row-end: form;
+}
+.navbar a{
+    float: left;
+    display: block; 
+    color: white;
+    text-align: center;
+    padding: 17px 23px; 
+    text-decoration: none; 
+}
+.navbar a:hover {
+    
+    color: black;
+    border-bottom: 3px solid rgb(228, 224, 224);
+}
+a.bold {
+    font-weight: bold;
+     border-bottom: 3px solid rgb(245, 242, 242);
+}
+
+.kon{
+        text-align: center;
+        font-size:120%;
+        color: aliceblue;
+}
+.submit{
+    color:black;
+    border: 2px solid rgb(247, 243, 243);
+    display:inline-block;
+    background-color: aliceblue;
+    font-size: 120%;
+}
+.submit a:hover{
+    color:rgb(95, 10, 129);
+ 
+} 
+ 
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+  width: 100%;
+}
+.row {
+  display: flex;
+  padding:23px;
+}
+.zoom {
+    padding: 13px;
+  transition: transform .3s;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5); 
+  -webkit-transform: scale(1); 
+  transform: scale(1.5); 
+}
+.item{
+  text-align:center;
+  display:block;
+  background-color: transparent;
+  border: 1px solid transparent;
+
+  margin-bottom: 1px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+  .image {
+    flex-basis: 40%
+  } .text {
+    color: white;
+    font-size: 25px;
+    padding-left: 20px;
+  }
+
+  
+  form {
+    background-color: #eff0fa;
+    width: 237px;
+    height: 44px;
+    border-radius: 5px;
+    margin-top: 5px;
+    display: flex;
+    float:right;
+    flex-direction: row;
+
+    
+  }
+  .input {
+    all: unset;
+    font: 16px system-ui;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+  }
+ 
+    
+    .rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    }
+    
+    .rating > input{
+     display:none;
+    }
+    
+    .rating > label {
+    position: relative;
+    width: 1.1em;
+    font-size: 10vw;
+    color: #FFD700;
+    cursor: pointer;
+    }
+    
+    .rating > label::before{
+    content: "\2605";
+    position: absolute;
+    opacity: 0;
+    }
+    
+    .rating > label:hover:before,
+    .rating > label:hover ~ label:before {
+    opacity: 1 !important;
+    }
+    
+    .rating > input:checked ~ label:before{
+    opacity:1;
+    }
+    
+    .rating:hover > input:checked ~ label:before{ 
+    opacity: 0.4;
+     }
